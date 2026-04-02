@@ -9,4 +9,4 @@ def read_root():
 
 @app.get("/teste")
 async def funcaoteste():
-    return {"teste": "num_aleatorio": random.randint(a:0, b:1000)}
+    return {"teste": "num_aleatorio": random.randint(a:0, b:20000)}
