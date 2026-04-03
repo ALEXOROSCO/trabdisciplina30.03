@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main # ou qualquer outra branch
+      - criacao-cd
 
   jobs:
     deliver:
@@ -16,5 +17,5 @@ on:
           with:
             name: projetzipado.zip
             path: |
-              '**.py'
+              '**.py' 
               README.md
