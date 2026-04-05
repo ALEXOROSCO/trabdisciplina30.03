@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main # ou qualquer outra branch
-      - criacao-cd
 
   jobs:
     deliver:
@@ -13,9 +12,10 @@ on:
           uses: actions/checkout@v4
 
         - name: Simulando Continuous Delivery
-        - uses: actions/upload-artifact@v4
+          uses: actions/upload-artifact@v4
           with:
             name: projetzipado.zip
             path: |
               '**.py' 
               README.md
+              
